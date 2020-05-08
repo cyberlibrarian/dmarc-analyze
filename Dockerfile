@@ -14,7 +14,7 @@ RUN mkdir ${PROJECT_DIR} ${PROJECT_DIR}/bin ${PROJECT_DIR}/lib ${PROJECT_DIR}/sh
 
 # Get the Alexa Top 1 Millions
 ADD gather.sh ${PROJECT}/bin/gather.sh
-ADD top1m.csv ${PROJECT}/share/top1m.csv
+ADD domains.txt ${PROJECT}/share/domains.txt
 
 # Open port 22 for SSH remote access and monitoring
 EXPOSE 22
