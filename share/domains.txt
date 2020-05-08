@@ -1,0 +1,1 @@
+## this will hold a list of domain names that we want to gather records for
