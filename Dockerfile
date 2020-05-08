@@ -20,4 +20,4 @@ ADD top1m.csv ${PROJECT}/share/top1m.csv
 EXPOSE 22
 
 # Start the gathering process
-CMD [ "python", "${PROJECT_DIR}/gather.sh", "${PROJECT_DIR}/share/top1m.csv ]
+CMD [ "/bin/bash", "${PROJECT_DIR}/gather.sh", "${PROJECT_DIR}/share/top1m.csv ]
