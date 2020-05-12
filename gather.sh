@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 #############################################################################
 # Gather DMARC, DKIM, SPF, and miscelaneous DNS records for a domains
 #
