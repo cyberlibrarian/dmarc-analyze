@@ -26,7 +26,7 @@
 #############################################################################
 
 
-cut -d, -f2 domains.txt | while read DOMAIN
+cat domains.txt | while read DOMAIN
 do
   if [[ ! -f "/data/${DOMAIN}.json" ]]
   then
