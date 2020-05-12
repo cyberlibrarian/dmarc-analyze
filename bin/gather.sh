@@ -26,10 +26,10 @@
 #############################################################################
 
 
-cut -d, -f2 /domain-data/top-1m.csv | while read DOMAIN
+cut -d, -f2 ../data/domains.txt | while read DOMAIN
 do
-  if [[ ! -f "/domain-data/domains/${DOMAIN}.json" ]]
+  if [[ ! -f "../share/${DOMAIN}.json" ]]
   then
-    checkdmarc ${DOMAIN} > "/domain-data/domains/${DOMAIN}.json"
+    checkdmarc ${DOMAIN} > "../share/${DOMAIN}.json"
   fi
 done
