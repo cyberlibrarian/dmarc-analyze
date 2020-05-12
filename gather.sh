@@ -26,7 +26,7 @@
 #############################################################################
 
 
-cat domains.txt | while read DOMAIN
+cat /dmarc-analyze/domains.txt | while read DOMAIN
 do
   if [[ ! -f "/data/${DOMAIN}.json" ]]
   then
